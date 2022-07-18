@@ -20,6 +20,10 @@ body {
     letter-spacing: 0.03em;
 }
 
+.section {
+    padding: 94px 0;
+}
+
 .list {
     list-style: none;
     padding: 0;
@@ -62,16 +66,16 @@ body {
     align-items: center;
 }
 
-.site-nav {
-    display: flex;
+.add-nav {
     margin-left: 93px;
 }
-.site-nav .item:first-child {
-    margin-right: 50px;
+
+.site-nav {
+    display: flex;
 }
 
-.site-nav .item:last-child {
-    margin-left: 51px;
+.site-nav .item:not( :last-child) {
+    margin-right: 50px;
 }
 
 .site-nav .link {
@@ -122,10 +126,14 @@ body {
 .hero {
     background-color: var(--additional-background-color);
     text-align: center;
+    padding: 200px 0;
 }
 
 .hero .hero-title {
+    width: 696px;
     margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
     margin-bottom: 30px;
 
     color: var(--hero-text-color);
@@ -179,8 +187,6 @@ body {
 
 .feature-list {
     display: flex;
-    padding-top: 94px;
-    padding-bottom: 94px;
 }
 
 .feature-list .item {
@@ -210,9 +216,10 @@ body {
 
 /* Our activities */
 
-.section {
-    padding-bottom: 94px;
+.work {
+    padding-top: 0;
 }
+
 .section-title {
     margin-top: 0;
     margin-bottom: 50px;
@@ -248,9 +255,6 @@ body {
     background-color: var(--extra-backround-color);
 }
 
-.section-title.team {
-    padding-top: 94px;
-}
 .team-list {
     display: flex;
 }
@@ -266,7 +270,7 @@ body {
 }
 
 .worker-info .photo {
-    margin-bottom: 30px;
+    padding-bottom: 30px;
     display: block;
 }
 
@@ -284,7 +288,8 @@ body {
 
 .worker-info .post {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
+    padding-bottom: 30px;
 
     font-size: 16px;
     line-height: 1.19;
@@ -294,11 +299,12 @@ body {
 /* footer */
 
 .footer {
+    padding: 60px 0;
+
     background-color: var(--additional-background-color);
 }
 
 .footer .logo {
-    padding-top: 60px;
     margin-bottom: 20px;
 
     color: var(--hero-text-color);    
@@ -333,9 +339,6 @@ body {
 
 .address-list .list-item:not( :last-child) {
     margin-bottom: 9px;
-}
-.address-list .list-item:last-child {
-    padding-bottom: 30px;
 }
 
 .address-list .link:hover,
@@ -373,7 +376,6 @@ body {
 
 .btn-list {
     display: flex;
-    padding-top: 94px;
     margin-bottom: 50px;
     justify-content: center;
 }
@@ -407,13 +409,13 @@ body {
 
 .project-info .photo {
     display: block;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .project-info .title {
     margin-top: 0;
-    margin-left: 24px;
-    margin-right: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
     margin-bottom: 4px;
 
     color: var(--title-text-color);
@@ -426,9 +428,10 @@ body {
 
 .project-list .type {
     margin-top: 0;
-    margin-right: 24px;
-    margin-left: 24px;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 20px;
 
     color: var(--primary-text-color);
 
